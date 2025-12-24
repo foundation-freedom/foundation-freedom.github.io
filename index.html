@@ -1,18 +1,108 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Foundation Freedom</title>
+  <meta name="description" content="Foundation Freedom — purpose-driven, voluntary community projects." />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
+
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark">FF</span>
+        <span class="brand-name">Foundation Freedom</span>
+      </a>
 
-  <h1>Foundation Freedom</h1>
-  <p>This is the main site.</p>
+      <nav class="nav">
+        <a href="/#projects">Projects</a>
+        <a href="/#join">Join</a>
+        <a href="/pma/">PMA</a>
+      </nav>
+    </div>
+  </header>
 
-  <ul>
-    <li><a href="/foundation-freedom/">Project site</a></li>
-    <li><a href="/pma/">Join the PMA</a></li>
-  </ul>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Build voluntary communities that actually work.</h1>
+          <p class="lead">
+            Foundation Freedom is a hub for purpose-driven projects — built step-by-step,
+            with clear agreements, transparent coordination, and practical tools.
+          </p>
 
+          <div class="cta-row">
+            <a class="btn primary" href="/pma/">Join the PMA</a>
+            <a class="btn" href="#projects">Explore projects</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h2>Start here</h2>
+          <ol>
+            <li>Read the mission + principles</li>
+            <li>Join the PMA (agreement + onboarding)</li>
+            <li>Pick a project to contribute to</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+          <a class="card" href="/pma/">
+            <h3>PMA Onboarding</h3>
+            <p>The private venue for members: agreements, updates, and participation steps.</p>
+          </a>
+
+          <a class="card" href="/foundation-freedom/">
+            <h3>Foundation Freedom (current site)</h3>
+            <p>Your existing project page — we can migrate this into the main hub over time.</p>
+          </a>
+
+          <div class="card muted">
+            <h3>Pactum</h3>
+            <p>Marketplace + household network (coming soon).</p>
+          </div>
+
+          <div class="card muted">
+            <h3>Bitcoin Game Show</h3>
+            <p>Entertainment + learning challenges (coming soon).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="section alt">
+      <div class="container join-inner">
+        <div>
+          <h2>Join</h2>
+          <p>
+            The PMA is the simplest way to enter the private venue, get updates, and choose a path.
+          </p>
+        </div>
+        <div class="join-actions">
+          <a class="btn primary" href="/pma/">Join the PMA</a>
+          <a class="btn" href="mailto:foundationfreedom360@gmail.com">Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Foundation Freedom</p>
+      <p class="small">Built on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
