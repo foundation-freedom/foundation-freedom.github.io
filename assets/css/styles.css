@@ -1,22 +1,21 @@
 :root{
-  --bg: #0b0f17;
-  --panel: #101828;
-  --text: #e6e8ee;
-  --muted: #a8b0c2;
-  --line: rgba(255,255,255,.10);
-  --accent: #5eead4;
-  --accent2: #60a5fa;
-  --shadow: 0 12px 30px rgba(0,0,0,.35);
+  --bg: #f5f7fb;
+  --panel: #ffffff;
+  --text: #1f2937;
+  --muted: #5f6b85;
+  --line: rgba(0,0,0,.08);
+  --accent: #2563eb;
+  --accent2: #14b8a6;
+  --shadow: 0 12px 30px rgba(0,0,0,.08);
   --radius: 16px;
 }
 
 *{ box-sizing: border-box; }
 html,body{ margin:0; padding:0; }
+
 body{
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: radial-gradient(1200px 600px at 20% 0%, rgba(94,234,212,.18), transparent 55%),
-              radial-gradient(1200px 600px at 80% 10%, rgba(96,165,250,.16), transparent 55%),
-              var(--bg);
+  background: linear-gradient(180deg, #eef2ff 0%, #f8fafc 40%, #ffffff 100%);
   color: var(--text);
   line-height: 1.55;
 }
@@ -33,7 +32,7 @@ a:hover{ text-decoration: underline; }
 .site-header{
   position: sticky;
   top: 0;
-  background: rgba(11,15,23,.75);
+  background: rgba(255,255,255,.85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
   z-index: 10;
@@ -57,7 +56,7 @@ a:hover{ text-decoration: underline; }
   width: 36px;
   height: 36px;
   border-radius: 10px;
-  background: linear-gradient(135deg, rgba(94,234,212,.18), rgba(96,165,250,.18));
+  background: linear-gradient(135deg, rgba(37,99,235,.15), rgba(20,184,166,.15));
   border: 1px solid var(--line);
   font-weight: 700;
 }
@@ -98,7 +97,7 @@ a:hover{ text-decoration: underline; }
 }
 
 .hero-card{
-  background: rgba(16,24,40,.65);
+  background: #ffffff;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 18px;
@@ -116,21 +115,21 @@ a:hover{ text-decoration: underline; }
   padding: 11px 14px;
   border-radius: 12px;
   border: 1px solid var(--line);
-  background: rgba(255,255,255,.04);
+  background: #ffffff;
   text-decoration:none !important;
   font-weight: 600;
 }
 .btn.primary{
-  border-color: rgba(94,234,212,.35);
-  background: linear-gradient(135deg, rgba(94,234,212,.18), rgba(96,165,250,.12));
+  border-color: rgba(37,99,235,.35);
+  background: linear-gradient(135deg, rgba(37,99,235,.15), rgba(20,184,166,.12));
 }
-.btn:hover{ filter: brightness(1.06); }
+.btn:hover{ filter: brightness(1.04); }
 
 /* Sections */
 .section{ padding: 32px 0; }
 .section h2{ margin: 0 0 14px; font-size: 1.5rem; }
 .section.alt{
-  background: rgba(255,255,255,.03);
+  background: #f1f5f9;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -142,7 +141,7 @@ a:hover{ text-decoration: underline; }
   gap: 14px;
 }
 .card{
-  background: rgba(16,24,40,.55);
+  background: #ffffff;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 16px;
